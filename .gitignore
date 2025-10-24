@@ -1,0 +1,41 @@
+# --- Python Environment & Build Artifacts ---
+# Virtual Environments
+venv/
+.venv/
+env/
+.env/
+
+# Package installation
+*.egg
+*.whl
+dist/
+build/
+
+# Byte-compiled files
+__pycache__/
+*.pyc
+
+# Distribution/packaging
+*.tar.gz
+*.zip
+
+# --- IDE and Editor Files ---
+# PyCharm
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# --- Machine Learning & Data Files ---
+# Trained Model Binaries (Crucial to ignore for version control)
+*.pkl
+*.model
+*.h5
+*.onnx
+
+# Log files for training runs
+*.log
+
+# Sensitive environment variables (DO NOT COMMIT SECRETS)
+# The .env.example should be committed as a template
+.env
