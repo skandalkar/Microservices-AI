@@ -39,3 +39,14 @@ __pycache__/
 # Sensitive environment variables (DO NOT COMMIT SECRETS)
 # The .env.example should be committed as a template
 .env
+
+
+#ignore images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.ico
