@@ -42,11 +42,11 @@ __pycache__/
 
 
 #ignore images
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
-*.svg
-*.ico
+.png
+.jpg
+.jpeg
+.gif
+.bmp
+.tiff
+.svg
+.ico

@@ -86,3 +86,28 @@ providing farmers with tools and insights to improve their productivity and sust
 - Other Microservices (To be added soon)
     - Crop Recommendation Service
     - Market Demand Analysis Service
+
+
+
+***********
+This is also include one more microservice for payment gateway integration using Razorpay in test mode.
+
+Razorpay Payment Gateway Microservice (Test Mode)
+- Enables secure, dummy transactions using Razorpay’s test environment.
+- Designed for onboarding, service subscriptions, or farmer-to-platform payments.
+- Includes:
+  - `/create-order` endpoint to generate Razorpay orders.
+  - `/verify-payment` endpoint to validate payment signatures.
+  - Frontend-ready integration using Razorpay Checkout SDK.
+- Fully isolated and secure—ideal for sandbox testing before going live.
+
+-----------------------------------------------------------------------------------
+Sample Outputs:
+- Home route
+ ![home.jpg](home.jpg)
+- -----------------------------------------------------------------------------------
+- Creating payment request order_id:
+ ![create-order.jpg](create-order.jpg)
+- -----------------------------------------------------------------------------------
+- Payment verification success:
+ ![verify-payment.jpg](verify-payment.jpg)
