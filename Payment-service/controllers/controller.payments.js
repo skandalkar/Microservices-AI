@@ -21,8 +21,7 @@ const createOrder = async (req, res) => {
 
         console.log("Creating Razorpay order with:", options);
 
-        let amountToDisplay = parseInt(amount.toFixed(2));
-
+        
         const order = await razorInstance.orders.create(options);
 
         //Order successful
@@ -31,7 +30,7 @@ const createOrder = async (req, res) => {
         return res.status(200).json({
             success: true,
             orderId: order.id,
-            amount: amountToDisplay,
+            amount: amountToRazor,
             currency: order.currency
         });
 
@@ -56,8 +55,7 @@ const verifyPayment = async (req, res) => {
         .update(body.toString())
         .digest("hex");
 
-    console.log(`Verify Signature: ${generateSignature}`)
-    // //compare signature and generateSignature
+    //compare signature and generateSignature
     if (generateSignature === signature) {
         return res.status(200).json({
             success: true,
