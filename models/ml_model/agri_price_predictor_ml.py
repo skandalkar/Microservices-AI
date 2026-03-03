@@ -215,7 +215,9 @@ class agriPricePredictor:
 # Provide the absolute path to the CSV file
 # absolute_path = C:\Users\Santosh\PycharmProjects\KrishiUnnati-AI\dataset\agri_training_data.csv
 
-file_path = "/Users/Santosh/PycharmProjects/KrishiUnnati-AI/dataset/agri_training_data.csv"
+file_path = "F:/KUP_Services/Microservices-AI/dataset/agri_training_data.csv"
+
+# F:/KUP_Services/Microservices-AI/dataset/agri_training_data.csv
 #Please change the path according to your system
 
 try:
